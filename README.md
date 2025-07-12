@@ -80,7 +80,7 @@ MainActivity
 
 Grab the latest release **APK** directly:
 
-[**Download SarvaMart v1.0.0**](https://github.com/your-org/sarvamart/releases/latest/download/sarvamart.apk)
+[**Download SarvaMart v1.0.0**](https://github.com/sujay-kumar-13/info/raw/refs/heads/master/assets/SarvaMart.apk)
 
 *(link will auto‑resolve to the most recent build)*
 
