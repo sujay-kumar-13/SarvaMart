@@ -1,0 +1,55 @@
+# Gradle / Android Studio
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+*.log
+
+# Kotlin / Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Android generated files
+captures/
+output.json
+navigation.json
+*.apk
+*.ap_                     # Gradle aapt‑output
+
+# Keystores & signing configs
+*.jks
+*.keystore
+app/keystore.properties   # if you externalise signing creds
+
+# Firebase & Google services
+google-services.json
+firebase‑adminsdk*.json   # service‑account files
+crashlytics‑properties.json
+
+# Cloudinary (or other secrets)
+cloudinary.properties
+cloudinary_keys.properties
+
+# CI / IDE caches
+.fastlane/
+buildkite/
+.cxx/
+.externalNativeBuild/
+.cxx/
+.idea/caches/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/assetWizardSettings.xml
+.idea/libraries/
+.idea/compiler.xml
+.idea/gradle.xml
+.idea/sonarlint/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+desktop.ini

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.sujay.apps.sarvamart.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.sujay.apps.sarvamart.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ItemFragment"
+            app:destination="@+id/ItemFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_CartFragment"
+            app:destination="@id/CartFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_OrdersFragment"
+            app:destination="@id/OrdersFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_AccountFragment"
+            app:destination="@id/AccountFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ItemFragment"
+        android:name="com.sujay.apps.sarvamart.ItemFragment"
+        tools:layout="@layout/fragment_item">
+
+        <action
+            android:id="@+id/action_ItemFragment_to_CartFragment"
+            app:destination="@id/CartFragment" />
+        <action
+            android:id="@+id/action_ItemFragment_to_BuyFragment"
+            app:destination="@id/BuyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.sujay.apps.sarvamart.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_SearchFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CartFragment"
+        android:name="com.sujay.apps.sarvamart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_CartFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment" />
+        <action
+            android:id="@+id/action_CartFragment_to_BuyFragment"
+            app:destination="@id/BuyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuyFragment"
+        android:name="com.sujay.apps.sarvamart.BuyFragment"
+        android:label="Buy"
+        tools:layout="@layout/fragment_buy">
+        <action
+            android:id="@+id/action_BuyFragment_to_NewAddressFragment"
+            app:destination="@id/NewAddressFragment" />
+        <action
+            android:id="@+id/action_BuyFragment_to_AddressFragment"
+            app:destination="@id/AddressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OrdersFragment"
+        android:name="com.sujay.apps.sarvamart.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/action_OrdersFragment_to_OrderDetailsFragment"
+            app:destination="@id/OrderDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OrderDetailsFragment"
+        android:name="com.sujay.apps.sarvamart.OrderDetailsFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_buy">
+        <action
+            android:id="@+id/action_OrderDetailsFragment_to_ItemFragment"
+            app:destination="@id/ItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AccountFragment"
+        android:name="com.sujay.apps.sarvamart.AccountFragment"
+        android:label="Account Details"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_AccountFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_AccountFragment_to_OrdersFragment"
+            app:destination="@id/OrdersFragment" />
+        <action
+            android:id="@+id/action_AccountFragment_to_AddressFragment"
+            app:destination="@id/AddressFragment" />
+        <action
+            android:id="@+id/action_AccountFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddressFragment"
+        android:name="com.sujay.apps.sarvamart.AddressFragment"
+        android:label="Address"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_AddressFragment_to_NewAddressFragment"
+            app:destination="@id/NewAddressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NewAddressFragment"
+        android:name="com.sujay.apps.sarvamart.NewAddressFragment"
+        android:label="Address"
+        tools:layout="@layout/fragment_new_address">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.sujay.apps.sarvamart.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+</navigation>
